@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I used the grid display property in this project. It was an amazing feeling to learn something and easily apply it even when you feel that you don't yet have a solid understanding about it. Used the grid property for the buttons for both web and mobile display.
+I learned to use the grid display property for this project.
 
 
 ```css
