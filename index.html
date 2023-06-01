@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1 class="letter">S P L I</h1>
+      <h1 class="letter">T T E R</h1>
+    </div>
+    
+    <div class="child-container">
+      
+      <div class="content">
+        <h2>Bill</h2>
+        <div class="input-icon">
+          <input type="value" class="enter_value" id="bill" placeholder="0">
+          <i><img src="images/icon-dollar.svg" alt="icon representing dollar sign"></i>
+        </div>
+
+        <h2 class="tip">Select Tip %</h2>
+        <div class="buttons">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input type="text" placeholder="Custom" id="custom" name="custom" min="0" max="100">
+        </div>
+    
+        <h2 class="num_of_people">Number of People <span class="error_message"></span></h2>        
+        <div class="input-icon">
+          <i class="icon"><img src="images/icon-person.svg" alt="icon representing people"></i>
+          <input type="value" name="number-of-people" class="enter_value" id="people" placeholder="0">
+        </div>
+
+      </div>
+  
+      <section class="result">
+        <div class="display_amount">
+          <div class="per_person">
+            <h3>Tip Amount <span>/ person</span></h3>
+            <h1 id="tip_per_person">
+              <!-- <img class="amount" src="images/icon-dollar.svg" alt="">0.00 -->
+              $0.00
+            </h1>
+          </div>
+
+          <div class="per_person">
+            <h3>Total <span>/ person</span></h3>
+            <h1 id="total_per_person">
+              <!-- <img class="amount" src="images/icon-dollar.svg" alt="">0.00 -->
+              $0.00
+            </h1>
+          </div>
+        </div>
+        
+        <button id="reset">Reset</button>
+      </section>
+    </div>
+    
+    <!-- <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/ikquilibrium-SG">Samuel Ikulayo</a>.
+    </footer> -->
+    
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+/* Layout */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.child-container {
+    width: 570px;
+    height: 310px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: flex;
+    padding: 15px 10px; 
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 230px;
+    margin: auto;
+}
+
+.result {
+    width: 260px;
+    height: 270px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color:hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 20px 10px;
+    margin: auto;
+}
+
+.enter_value {
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    text-align: end;
+    padding: 5px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 4px;
+    border: none;
+}
+
+.enter_value:hover {
+    cursor: pointer;
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+.enter_value:focus {
+    outline: none !important;
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+.buttons {
+    text-align: center;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px 10px;
+    font-family: 'Space Mono', monospace;
+}
+
+.tip {
+    margin: 20px 0 10px;
+}
+
+.num_of_people {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
+}
+
+.display_amount {
+    padding-bottom: 20px;
+}
+
+span {
+    display: block;
+    font-size: 10px;
+    color: hsl(184, 14%, 56%);
+}
+
+.per_person {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.error_message {
+    color: rgba(216, 19, 19, 0.7);
+}
+
+#tip_per_person, #total_per_person {
+    color: hsl(172, 67%, 45%);
+}
+
+
+/* Typography */
+h1 {
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+h2 {
+    font-size: 10px;
+    margin-bottom: 4px;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 12px;
+    color: hsl(189, 41%, 97%);
+}
+
+h4 {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.letter {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+    position: relative;
+    top: -40px;
+}
+
+
+/* Buttons */
+button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 7px 22px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: none;
+    font-family: 'Space Mono', monospace;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+button:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#custom {
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    text-align: end;
+    padding-right: 10px;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+}
+
+#custom:hover {
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+#reset {
+    width: 100%;
+    margin: 0 auto;
+    background-color: hsl(183, 67%, 24%);
+    color: hsl(183, 100%, 15%);
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+}
+
+#reset:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+
+/* Input Icon */
+.input-icon {
+    position: relative;
+}
+
+.input-icon > i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 5px;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-size: normal;
+    color: hsl(186, 14%, 43%);
+}
+
+.input-icon > input {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.input-icon-right > i {
+    right: 0;
+}
+
+.input-icon-right > input {
+    padding-left: 0;
+    padding-right: 25px;
+    text-align: right;
+}
+
+img {
+    width: 8px;
+}
+
+
+/* Footer */
+/* .attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(183, 100%, 15%);
+} */
+
+
+
+/* Media query  */
+@media ( max-width: 450px ) {
+
+    /* Layout */
+    .container {
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    
+    .child-container {
+        margin-top: 50px;
+        width: 300px;
+        height: 570px;
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 20px 5px; 
+        margin-bottom: 10px;
+    }
+    
+    .content {
+        width: 250px;
+    }
+
+    .enter_value {
+        margin-bottom: 20px;
+    }
+    
+    .result {
+        width: 250px;
+        height: 200px;
+    }
+
+    .display_amount {
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    
+    .per_person {
+        margin-bottom: 20px;
+    }
+
+    .tip {
+        margin: 0px 0px 12px;
+    }
+
+    .num_of_people {
+        margin: -5px 0 5px;
+    }
+
+
+    /* Input Icon */
+    .input-icon > i {
+        top: 33%;
+        left: 5px;
+    }
+
+
+    /* Typography */
+    p {
+        font-size: 13px;
+    }
+
+    .letter {
+        font-size: 18px;
+        top: 35px;
+    }
+
+
+    /* Buttons */
+    .buttons {
+        grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+        margin-bottom: 25px; 
+    }
+    
+    button {
+        font-size: 16px;
+    }
+
+    #custom {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    #reset {
+        font-size: 14px;
+        /* padding: 4px; */
+        margin-bottom: 10px;
+    }
+}
