@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Ikquilibrium-SG/tip-calculator-app-main.git)
+- Live Site URL: [Netlify](https://calculator-tip-samz.netlify.app/)
 
 
 
@@ -95,8 +95,8 @@ DOM manipulation in JavaScript
 
 ## Acknowledgments
 
-I want to thank Joy Shaheb for his video and article on CSS Grid. You can check for the youtube video link in Useful resources above.
+- Joy Shaheb for his video and article on CSS Grid. You can check for the youtube video link in Useful resources above.
 
-Stackoverflow was also very useful in the completion of this project
+- Stackoverflow was also very useful in the completion of this project.
 
-I also want to thank my friend Oyinloye Sola for guiding me through the JavaScript. I was stucked on the JavaScript part for a long time but with his guidance I was able to finish the code. I learned how to test the code using console.log(). It was fun and interesting.
+- My friend Sola for guiding me through writing the JavaScript code. I was stucked on the JavaScript part for a long time but with his guidance I was able to finish the code. I learned how to test the code using console.log(). 
